@@ -10,39 +10,39 @@ Model-View-Controller를 말한다.
 - 데이터가 바뀌면 controller를 업데이트 하기도 한다.
 
 ```java
-    public class Student {
-       private String rollNo;
-       private String name;
+public class Student {
+   private String rollNo;
+   private String name;
 
-       public String getRollNo() {
-          return rollNo;
-       }
+   public String getRollNo() {
+      return rollNo;
+   }
 
-       public void setRollNo(String rollNo) {
-          this.rollNo = rollNo;
-       }
+   public void setRollNo(String rollNo) {
+      this.rollNo = rollNo;
+   }
 
-       public String getName() {
-          return name;
-       }
+   public String getName() {
+      return name;
+   }
 
-       public void setName(String name) {
-          this.name = name;
-       }
-    }
+   public void setName(String name) {
+      this.name = name;
+   }
+}
 ```
 
 ##view
 UI로직을 말한다.
 
 ```java
-    public class StudentView {
-        public void printStudentDetails(String studentName, String studentRollNo){
-          System.out.println("Student: ");
-          System.out.println("Name: " + studentName);
-          System.out.println("Roll No: " + studentRollNo);
-        }
+public class StudentView {
+    public void printStudentDetails(String studentName, String studentRollNo){
+      System.out.println("Student: ");
+      System.out.println("Name: " + studentName);
+      System.out.println("Roll No: " + studentRollNo);
     }
+}
 ```
 
 
@@ -54,35 +54,35 @@ UI로직을 말한다.
 예) view의 input폼에 사용자가 입력한 데이터를 model을 사용해서 데이터베이스에 저장한다.
 
 ```java
-    public class StudentController {
-        private Student model;
-        private StudentView view;
+public class StudentController {
+    private Student model;
+    private StudentView view;
 
-        public StudentController(Student model, StudentView view){
-          this.model = model;
-          this.view = view;
-        }
-
-        public void setStudentName(String name){
-          model.setName(name);		
-        }
-
-        public String getStudentName(){
-          return model.getName();		
-        }
-
-        public void setStudentRollNo(String rollNo){
-          model.setRollNo(rollNo);		
-        }
-
-        public String getStudentRollNo(){
-          return model.getRollNo();		
-        }
-
-        public void updateView(){				
-          view.printStudentDetails(model.getName(), model.getRollNo());
-        }
+    public StudentController(Student model, StudentView view){
+      this.model = model;
+      this.view = view;
     }
+
+    public void setStudentName(String name){
+      model.setName(name);		
+    }
+
+    public String getStudentName(){
+      return model.getName();		
+    }
+
+    public void setStudentRollNo(String rollNo){
+      model.setRollNo(rollNo);		
+    }
+
+    public String getStudentRollNo(){
+      return model.getRollNo();		
+    }
+
+    public void updateView(){				
+      view.printStudentDetails(model.getName(), model.getRollNo());
+    }
+}
 ```
 
 ##예제 (온라인 서점)
