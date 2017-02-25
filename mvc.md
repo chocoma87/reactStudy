@@ -9,7 +9,7 @@ Model-View-Controller를 말한다.
 - controller의 지시에 따라 업데이트 되기도 한다.
 - 데이터가 바뀌면 controller를 업데이트 하기도 한다.
 
-```
+```java
     public class Student {
        private String rollNo;
        private String name;
@@ -35,7 +35,7 @@ Model-View-Controller를 말한다.
 ##view
 UI로직을 말한다.
 
-```
+```java
     public class StudentView {
         public void printStudentDetails(String studentName, String studentRollNo){
           System.out.println("Student: ");
@@ -53,7 +53,7 @@ UI로직을 말한다.
 
 예) view의 input폼에 사용자가 입력한 데이터를 model을 사용해서 데이터베이스에 저장한다.
 
-```
+```java
     public class StudentController {
         private Student model;
         private StudentView view;
