@@ -16,6 +16,7 @@ var ReactDOM = require("react-dom");
 es6를 사용하는 방법은 classe를 사용하는 방법인데, 먼저 리액트 헬퍼 함수를 사용하는 방법으로 해보자. 
 
 ```
+// 꼭 대문자로
 var TodoComponent = React.createClass({
     render: function(){
         return (
