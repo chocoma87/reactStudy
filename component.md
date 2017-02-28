@@ -70,4 +70,4 @@ ReactDOM.render(<삽입할 컴퍼넌트 이름 />, 컴퍼넌트가 삽입될 htm
 #####ReactDOM 코드를 열어보니, 자바스크립트 객체로 트리구조의 가상 돔을 만들어서 사용하는 것 같다. 브라우저에서도 dom을 파싱할 때 트리구조로 만들어서 한다고 알고 있는데, 가상 dom이라는게 html구조를 자바스크립트 객체로 표현한 것이었다.
 
 ###React Developer Tool
-[React Developer Tool](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi/related?hl=en)라는 리액트 디버깅 툴이 있다. 설치하고 나면 크롬 개발자 도구에 react라는 탭이 생기는데 컴포넌트정보 등을 볼 수 있다. BBC 처럼 리액트로 만든 사이트에 들어가서 개발자 도구로 살펴보는 것도 도움이 될 것 같다.
+[React Developer Tool](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi/related?hl=en)라는 리액트 디버깅 툴이 있다. 설치하고 나면 크롬 개발자 도구에 react라는 탭이 생기는데 컴포넌트정보 등을 볼 수 있다. BBC, air bnb 처럼 리액트로 만든 사이트에 들어가서 개발자 도구로 살펴보는 것도 도움이 될 것 같다.
