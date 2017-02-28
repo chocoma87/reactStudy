@@ -46,4 +46,6 @@ var profile = {
 ReactDOM.render(<TodoComponent day="목" profile={profile} />, document.querySelector(".header-title"));
 ```
 
-이때 여러개의 props을 전달해 줄 수 있으며(day, profile), 변수를 prps으로 넘겨줄 때는 {val} 신텍스를 사용한다.
+이때 여러개의 props을 전달해 줄 수 있으며(day, profile), 변수를 prps으로 넘겨줄 때는 {val} 신텍스를 사용한다. 그리고 jsx에서 prop에 불러올 때에는 object이면 안된다. (array는 가능)
+
+
