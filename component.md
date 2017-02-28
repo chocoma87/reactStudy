@@ -25,6 +25,8 @@ var TodoComponent = React.createClass({
 });
 ```
 
+createClass 함수는 오브젝트를 인자로 받는다. 오브젝트에는 여러개의 메서드가 올 수 있는데, 그중 하나가 render 메서드이다. render 메서드가 리턴해 주는 값은 JSX인데, 나중에 html로 변환되서 html 파일에 삽입되는 코드로 document.createElement와 비슷한 역할을 한다고 생각하면 된다. 
+
 ##step2
 생선한 컴퍼넌트를 html에 삽입한다. 
 
