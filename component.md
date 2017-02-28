@@ -30,6 +30,7 @@ var TodoComponent = React.createClass({
 
 ```javascript 
 ReactDOM.render(<TodoComponent />, document.querySelector(".day"));
+ReactDOM.render(<삽입할 컴퍼넌트 이름 />, 컴퍼넌트가 삽입될 html);
 ```
 
 
