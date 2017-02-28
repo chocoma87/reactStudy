@@ -3,6 +3,13 @@
 
 ####여기서 컴퍼넌트란, 작은 조각으로 분리한 UI조각이라고 할 수 있는데, 서로 완전히 분리된 독립된 객체이며 따라서 재사용 할 수 있다.
 
+###basic use
+```react
+ReactDOM.render(<h1>hello</h1>, document.querySelector(".header-title"));
+```
+React.createClass 없이 jsx 테그를 바로 render할 수 있다.
+
+
 ###step1
 리액트 오브젝트를 불러오면서 시작한다. 
 
