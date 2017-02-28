@@ -57,7 +57,7 @@ var TodoComponent = React.createClass({
 
 
 
-##step2
+##step3
 생선한 컴퍼넌트를 html에 삽입한다. 
 
 ```javascript 
