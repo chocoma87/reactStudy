@@ -62,10 +62,6 @@ var TitleComponent = React.createClass({
     }
 });
 
-var now = new Date();
-var nowString = String(now);
-
-
 ReactDOM.render(<TitleComponent time={new Date().toLocaleTimeString()} />, document.querySelector('.header-title'));
 ```
 하지만 여기서도 toLocaleTimeString로 date 오브젝트를 스트링으로 바꿔줬다. 
