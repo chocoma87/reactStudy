@@ -31,4 +31,4 @@ var TodoComponent = React.createClass({
     }
 });
 ```
-컴포넌트에서 this로 접근할 수 있다.
+컴포넌트에서 this.state로 접근할 수 있다.
