@@ -27,6 +27,36 @@ var TodoComponent = React.createClass({
 
 createClass 함수는 오브젝트를 인자로 받는다. 오브젝트에는 여러개의 메서드가 올 수 있는데, 그중 하나가 render 메서드이다. render 메서드가 리턴해 주는 값은 JSX인데, 나중에 html로 변환되서 html 파일에 삽입되는 코드로 document.createElement와 비슷한 역할을 한다고 생각하면 된다. 
 
+그리고 주의할 점은 아래와 같은 코드는 동작하지 않는다.
+
+```
+var TodoComponent = React.createClass({
+    render: function(){
+        return (
+            <h1>Hello</h1>
+            <p>Gool morning</p>
+        );
+    }
+});
+```
+top level 테그는 하나만 존재해야 하기 때문이다. 위와 같은 구조를 만들고 싶다면 아래와 같이 수정하면 동작한다. 
+
+
+```
+var TodoComponent = React.createClass({
+    render: function(){
+        return (
+            <div>
+                <h1>Hello</h1>
+                <p>Gool morning</p>
+            </div>
+        );
+    }
+});
+```
+
+
+
 ##step2
 생선한 컴퍼넌트를 html에 삽입한다. 
 
@@ -38,3 +68,5 @@ ReactDOM.render(<삽입할 컴퍼넌트 이름 />, 컴퍼넌트가 삽입될 htm
 
 
 #####ReactDOM 코드를 열어보니, 자바스크립트 객체로 트리구조의 가상 돔을 만들어서 사용하는 것 같다. 브라우저에서도 dom을 파싱할 때 트리구조로 만들어서 한다고 알고 있는데, 가상 dom이라는게 html구조를 자바스크립트 객체로 표현한 것이었다.
+
+##### [React Developer Tool](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi/related?hl=en) 이라는 리액트 디버깅 툴이 있다. 
