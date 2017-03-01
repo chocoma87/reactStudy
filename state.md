@@ -121,3 +121,7 @@ var profile = {
 ReactDOM.render(<TodoComponent day="목" profile={profile} />, document.querySelector(".header-title"));
 ```
 map 함수를 사용해서 jsx를 포함한 어레이로 바꿔준다. 이때 각 리스트 아이템은 리액트가 식별할 수 있는 key 값이 있어야 한다.(브라우저에서는 출력되지 않고, 리액트 인스펙터에서 확인할 수 있다.)
+
+
+###what is state?
+state muchine 이라는 컴퓨터공학 분야에서 나왔다고 한다. 프로그램이 실행되고 있는 현재 사이클에서 정의되고 사용되고 있는 모든 변수의 snapshot이라고 할 수 있다.
