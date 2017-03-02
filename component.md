@@ -4,7 +4,7 @@
 ####여기서 컴퍼넌트란, 작은 조각으로 분리한 UI조각이라고 할 수 있는데, 서로 완전히 분리된 독립된 객체이며 따라서 재사용 할 수 있다.
 
 ###basic use
-```react
+```javascript
 ReactDOM.render(<h1>hello</h1>, document.querySelector(".header-title"));
 ```
 React.createClass 없이 jsx 테그를 바로 render할 수 있다.
@@ -22,7 +22,7 @@ var ReactDOM = require("react-dom");
 컴퍼넌트생성한다.  컴퍼넌트를 생성하는데는 2가지 방법이 있는데, es6를 사용하는 방법과 리액트 헬퍼메서드를 사용하는 방법이 있다. 
 es6를 사용하는 방법은 classe를 사용하는 방법인데, 먼저 리액트 헬퍼 함수를 사용하는 방법으로 해보자. 
 
-```
+```javascript
 // 꼭 대문자로
 var TodoComponent = React.createClass({
     render: function(){
@@ -37,7 +37,7 @@ createClass 함수는 오브젝트를 인자로 받는다. 오브젝트에는 �
 
 그리고 주의할 점은 아래와 같은 코드는 동작하지 않는다.
 
-```
+```javascript
 var TodoComponent = React.createClass({
     render: function(){
         return (
@@ -50,7 +50,7 @@ var TodoComponent = React.createClass({
 top level 테그는 하나만 존재해야 하기 때문이다. 위와 같은 구조를 만들고 싶다면 아래와 같이 수정하면 동작한다. 
 
 
-```
+```javascript
 var TodoComponent = React.createClass({
     render: function(){
         return (
