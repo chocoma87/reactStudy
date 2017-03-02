@@ -69,3 +69,11 @@ var TitleComponent = React.createClass({
 ReactDOM.render(<TitleComponent time={new Date().toLocaleTimeString()} />, document.querySelector('.header-title'));
 ```
 하지만 여기서도 toLocaleTimeString로 date 오브젝트를 스트링으로 바꿔줬다. 
+
+
+###child
+props.children로 jsx 테그 안의 엘리먼트를 불러올 수 있다. 여러개의 child를 가질 수 있다.   
+```
+// props.child는 Hello world! 스트링이 된다. 
+<MyComponent>Hello world!</MyComponent>
+```
