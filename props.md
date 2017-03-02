@@ -2,7 +2,7 @@
 리액트 컴퍼넌트로 넘겨지는 데이터를 말한다.
 
 ###props 기본   
-```
+```javascript
 // create component
 var TodoComponent = React.createClass({
     render: function(){
@@ -26,7 +26,7 @@ ReactDOM.render(<TodoComponent day={10} />, document.querySelector(".header-titl
 숫자를 넣을 때는 {}를 사용한다.  
 
 ###props에 변수가 오는 경우   
-```
+```javascript
 // create component
 var TodoComponent = React.createClass({
     render: function(){
@@ -54,7 +54,7 @@ ReactDOM.render(<TodoComponent day="목" profile={profile} />, document.querySel
 
 
 ###props에 바로 스크립트 코드를 넣을 수 있다.
-```
+```javascript
 var TitleComponent = React.createClass({
     render: function (){
         return (
@@ -73,7 +73,7 @@ ReactDOM.render(<TitleComponent time={new Date().toLocaleTimeString()} />, docum
 
 ###child
 props.children로 jsx 테그 안의 엘리먼트를 불러올 수 있다. 여러개의 child를 가질 수 있다.   
-```
+```javascript
 // props.child는 Hello world! 스트링이 된다. 
 <MyComponent>Hello world!</MyComponent>
 ```
