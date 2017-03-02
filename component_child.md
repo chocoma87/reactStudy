@@ -1,6 +1,6 @@
 #Child component
 
-```
+```javascript
 // create component
 var TodoComponent = React.createClass({
     getInitialState: function (){
@@ -48,7 +48,7 @@ ReactDOM.render(<TodoComponent day="목" profile={profile} />, document.querySel
 이때, 자식 컴포넌트에서는 부모 컴포넌트의 state에 접근할 수 없다.
 
 자식 컴포넌트에서 부모 컴포넌트의 데이터에 접근할 수 있는 방법이 있는데, 부모 컴포넌트에서 자신의 데이터를 가공하는 함수를 만든 다음 함수를 자식 컴포넌트에 props로 넘겨주면 된다. 이때, this등가 참조하는 값이 무엇인지 주의해야 한다.
-```
+```javascript
 // 부모 컴포넌트
 class App extends React.Component {
     constructor (props){
