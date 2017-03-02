@@ -3,7 +3,7 @@
 
 클래스가 아닌 컴포넌트의 예는 다음과 같다.
 
-```
+```javascript
 function TitleComponent (props){
     return (
         <div>{props.time}</div>
@@ -15,7 +15,7 @@ ReactDOM.render(<TitleComponent time={new Date().toLocaleTimeString()} />, docum
 
 
 ###state basic
-```
+```javascript
 var TodoComponent = React.createClass({
     getInitialState: function (){
         return {
@@ -33,7 +33,7 @@ var TodoComponent = React.createClass({
 ```
 컴포넌트에서 this.state로 접근할 수 있다.
 
-```
+```javascript
 // create component
 var TodoComponent = React.createClass({
     getInitialState: function (){
@@ -76,7 +76,7 @@ ReactDOM.render(<TodoComponent day="목" profile={profile} />, document.querySel
 setState 함수로 state값을 바꿀 수 있다.
 
 ###setState
-```
+```javascript
 setState(nextState, callback)
 ```
 
@@ -85,7 +85,7 @@ nextState 에는 오브젝트 또는 오브젝트를 반환하는 함수가 올 
 
 
 ###cycling state
-```
+```javascript
 // create component
 var TodoComponent = React.createClass({
     getInitialState: function (){
