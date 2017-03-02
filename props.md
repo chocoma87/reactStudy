@@ -20,8 +20,12 @@ ReactDOM.render(<TodoComponent day="목" />, document.querySelector(".header-tit
 ```
 여기서 this는 컴퍼넌트를 참조한다. props은 html 테그의 속성처럼 jsx 테그에 속성을 추가한다 라고 생각할 수 있다(syntex가 비슷함). 하지만 render 함수에서 불러오는 컴퍼넌트에서 해당 prop 값에 접근할 수 있다는게 차이점이라고 할 수 있다.
 
+```
+ReactDOM.render(<TodoComponent day={10} />, document.querySelector(".header-title"));
+```
+숫자를 넣을 때는 {}를 사용한다.  
 
-###props에 변수가 오는 경우   
+###props에 변수가 오는 경우   
 ```
 // create component
 var TodoComponent = React.createClass({
