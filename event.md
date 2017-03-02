@@ -1,6 +1,6 @@
 #Event
 
-```
+```javascript
 // create component
 var TodoComponent = React.createClass({
     getInitialState: function (){
