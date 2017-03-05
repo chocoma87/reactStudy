@@ -72,6 +72,46 @@ ReactDOM.render(<TodoComponent />, document.querySelector(".day"));
 ReactDOM.render(<삽입할 컴퍼넌트 이름 />, 컴퍼넌트가 삽입될 html);
 ```
 
+##컴포넌트의 두가지 
+컴포넌트에는 functional과 class 두가지 종류가 있다. class component는 class를 사용해 생성한 컴포넌트로, state와 lifecycle hooks를 갖는다. (functional 컴포넌트는 proprs만 갖는다.)
+
+**functional component**
+```
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+```
+**class component**
+```
+class Welcome extends React.Component {
+  render() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
+}
+```
+
+컴포넌트가 다른 컴포넌트를 불러올 수 있는데, 이때 여러번 불러오는 것도 가능하다.  
+```javasript
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
+function App() {
+  return (
+    <div>
+      <Welcome name="Sara" />
+      <Welcome name="Cahal" />
+      <Welcome name="Edite" />
+    </div>
+  );
+}
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+);
+```
+
 
 
 #####ReactDOM 코드를 열어보니, 자바스크립트 객체로 트리구조의 가상 돔을 만들어서 사용하는 것 같다. 브라우저에서도 dom을 파싱할 때 트리구조로 만들어서 한다고 알고 있는데, 가상 dom이라는게 html구조를 자바스크립트 객체로 표현한 것이었다.
