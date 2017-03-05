@@ -124,7 +124,7 @@ map 함수를 사용해서 jsx를 포함한 어레이로 바꿔준다. 이때 �
 
 
 ##props와 state의 차이점
-props는 컴포넌트에서 벼경할 수 없는 오브젝트이고 반면에 state는 컴포넌트 안에서 변경할 수 있는 오브젝트이다. props는 컴포넌트를 render로 실행시킬 때 부모로부터 컴포넌트로 넘겨지는 값인 반면, state는 컴포넌트 안에서 정의되며 사용 할 수 있는 오브젝트이다. 
+props는 컴포넌트에서 변경할 수 없는 오브젝트이고 반면에 state는 컴포넌트 안에서 변경할 수 있는 오브젝트이다. props는 컴포넌트를 render로 실행시킬 때 부모로부터 컴포넌트로 넘겨지는 값인 반면, state는 컴포넌트 안에서 정의되며 사용 할 수 있는 오브젝트이다. 
 다이나믹하게 변경되어야 하는 컨텐츠의 경우 state를 사용하면 된다. 아래는 리액트 도큐먼테이션에서 강조하고 있는 문장이다. 여기서 [pure functon](https://en.wikipedia.org/wiki/Pure_function)은 같은 인풋을 받았을 때 항상 같은 아웃풋을 내는 함수를 말한다.  
 **All React components must act like pure functions with respect to their props.**
 
