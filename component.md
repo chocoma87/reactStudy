@@ -72,7 +72,7 @@ ReactDOM.render(<TodoComponent />, document.querySelector(".day"));
 ReactDOM.render(<삽입할 컴퍼넌트 이름 />, 컴퍼넌트가 삽입될 html);
 ```
 
-##컴포넌트의 두가지 
+##컴포넌트의 두가지 종류  
 컴포넌트에는 functional과 class 두가지 종류가 있다. class component는 class를 사용해 생성한 컴포넌트로, state와 lifecycle hooks를 갖는다. (functional 컴포넌트는 proprs만 갖는다.)
 
 **functional component**
